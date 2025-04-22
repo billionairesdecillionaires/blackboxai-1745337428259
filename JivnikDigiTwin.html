@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Jeevnik Digital Twin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(to right, #fcd9b3, #fffff7 50%, #fcd9b3);
+    }
+    .section-content {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      padding: 2rem;
+    }
+    .img-wrap {
+      float: right;
+      margin: 1rem 0 1rem 1rem;
+      max-width: 40%;
+    }
+    @media (max-width: 768px) {
+      .img-wrap {
+        float: none;
+        display: block;
+        margin: 1.5rem auto;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen">
+  <!-- Navigation Bar Component -->
+  <navbar-component></navbar-component>
+    
+  <!-- Load the navbar component -->
+  <script type="module" src="navbar-component.js"></script>
+  <!-- First Section -->
+  <section class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-12">
+    <div class="max-w-7xl w-full flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16">
+      <div class="w-full md:w-3/5 text-center md:text-left md:pt-8 section-content">
+        <img
+          src="images/page8.png"
+          alt="Digital Twin illustration"
+          class="img-wrap block md:hidden rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+        />
+        <h1 class="font-extrabold text-3xl sm:text-4xl md:text-5xl text-gray-900 leading-tight">
+          JEEVNIK DIGITAL TWIN
+        </h1>
+        <p class="mt-4 text-lg text-gray-900">
+          Personalized Healthcare, Anytime, Anywhere
+        </p>
+        <p class="mt-6 text-base sm:text-lg text-gray-900 leading-relaxed">
+          Jeevnik's Digital Twin is a virtual replica of a patient, built from their real-time health data, medical history, and lifestyle patterns. By continuously analyzing this data using AI and machine learning, our Digital Twin provides personalized health insights, helping both doctors and patients make informed decisions.
+        </p>
+      </div>
+      <div class="w-full md:w-2/5 hidden md:block">
+        <img
+          alt="A female doctor pointing at a digital twin hologram of a human body displayed on a screen"
+          class="w-full h-auto object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          src="images/page8.png"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Section -->
+  <section class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-12">
+    <div class="max-w-7xl w-full flex flex-col md:flex-row items-start gap-8 md:gap-16">
+      <div class="w-full md:w-3/5 text-gray-900 section-content">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-gray-900">
+          Currently Working on:<br/>
+          <span class="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+            Insulin-Glucose Homeostasis Twin
+          </span>
+        </h2>
+        <img 
+          src="images/page9.png"
+          alt="Healthcare Monitoring illustration"
+          class="img-wrap block md:hidden rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+        />
+        <p class="text-base sm:text-lg mb-6 leading-relaxed">
+          Our first major focus is on developing a Diabetes Solution - the Insulin-Glucose Homeostasis Twin.
+        </p>
+        <div class="space-y-6">
+          <p class="font-semibold text-lg sm:text-xl text-gray-900">
+            This AI-driven model will:
+          </p>
+          <ul class="list-none space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed">
+            <li class="flex items-start space-x-4">
+              <span class="text-orange-500 text-2xl flex-shrink-0">•</span>
+              <span>Simulate glucose-insulin dynamics to help patients and doctors better understand metabolic health.</span>
+            </li>
+            <li class="flex items-start space-x-4">
+              <span class="text-orange-500 text-2xl flex-shrink-0">•</span>
+              <span>Provide real-time monitoring and predictive alerts to prevent glucose fluctuations.</span>
+            </li>
+            <li class="flex items-start space-x-4">
+              <span class="text-orange-500 text-2xl flex-shrink-0">•</span>
+              <span>Offer personalized lifestyle and medication recommendations based on individual metabolic responses.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full md:w-2/5 hidden md:block">
+        <img 
+          alt="Doctor interacting with AI-driven health monitoring system" 
+          class="w-full h-auto object-cover rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          src="images/page9.png"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Third Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-12">
+    <div class="max-w-7xl mx-auto w-full">
+      <h1 class="text-center text-black text-2xl sm:text-3xl font-semibold mb-16">
+        Key Benefits of Jeevnik's Digital Twin
+      </h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
+        <!-- Left Column -->
+        <div class="space-y-12">
+          <div class="p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+            <h2 class="text-black text-xl font-semibold mb-3">
+              Early Disease Detection
+            </h2>
+            <p class="text-black text-base leading-relaxed">
+              AI-powered predictive analytics help prevent complications before they arise.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+            <h2 class="text-black text-xl font-semibold mb-3">
+              Remote Monitoring & Alerts
+            </h2>
+            <p class="text-black text-base leading-relaxed">
+              Doctors can track patient health, and alerts can notify caregivers in emergencies.
+            </p>
+          </div>
+        </div>
+
+        <!-- Center Column with Image -->
+        <div class="flex flex-col items-center justify-center py-8 md:py-0">
+          <div class="relative w-full max-w-[300px] md:max-w-[400px]">
+            <img 
+              alt="Purple human body silhouette with blue glowing circle"
+              class="w-full h-auto object-contain" 
+              src="images/page10.png" 
+            />
+          </div>
+          <div class="text-center mt-8">
+            <h2 class="text-black text-xl font-semibold mb-3">
+              Affordable & Accessible
+            </h2>
+            <p class="text-black text-base leading-relaxed max-w-xs mx-auto">
+              Designed for India's healthcare landscape, ensuring affordability and easy implementation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-12">
+          <div class="p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+            <h2 class="text-black text-xl font-semibold mb-3">
+              Personalized Care Plans
+            </h2>
+            <p class="text-black text-base leading-relaxed">
+              Every patient receives tailored lifestyle and treatment recommendations.
+            </p>
+          </div>
+          <div class="p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+            <h2 class="text-black text-xl font-semibold mb-3">
+              Empowering Doctors & Patients
+            </h2>
+            <p class="text-black text-base leading-relaxed">
+              Enhancing decision-making with actionable health insights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
