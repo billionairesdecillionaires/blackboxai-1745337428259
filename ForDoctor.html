@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Diabetes Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .gradient-bg {
+            background-image: linear-gradient(to right, rgb(252, 217, 182), rgb(255, 255, 255), rgb(252, 217, 182));
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Navigation Bar Component -->
+    <navbar-component></navbar-component>
+    
+    <!-- Load the navbar component -->
+    <script type="module" src="navbar-component.js"></script>
+
+    <!-- Hero Section -->
+    <div class="min-h-screen flex flex-col justify-center items-center px-6 py-20 gradient-bg">
+        <h1 class="text-center text-black text-[26px] sm:text-[32px] md:text-[32px] font-normal max-w-4xl mb-16 pt-15 mt-16">
+            The Future of Diabetes Management, in Your Hands
+        </h1>
+        <div class="flex flex-col md:flex-row justify-center items-center max-w-7xl w-full gap-8 md:gap-12">
+            <div class="flex flex-col max-w-md md:max-w-sm text-center md:text-left">
+                <h2 class="font-semibold text-lg text-black">
+                    Managing diabetes is complex.
+                </h2>
+                <p class="text-black text-3xl md:text-4xl font-light mb-3 leading-tight">
+                    Your EHR shouldn't be.
+                </p>
+                <p class="text-black text-sm font-normal max-w-xs leading-relaxed mx-auto md:mx-0 mt-2">
+                    Jeevnik simplifies patient history, streamlines consultations, and provides AI-powered insights - so
+                    you can focus on delivering better care, not battling paperwork.
+                </p>
+            </div>
+            <img alt="Doctor in white coat showing a futuristic AI hologram"
+                class="w-full max-w-lg object-contain mb-16 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                src="images/page11.png"/>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-6 gradient-bg">
+        <h1 class="font-normal text-2xl mb-16 max-w-xl text-center">
+            Why Doctors Choose Jeevnik?
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full px-4">
+            <div class="flex flex-col justify-start space-y-8">
+                <div class="feature-card p-6 rounded-lg hover:bg-white/50">
+                    <i class="fas fa-chart-line text-3xl text-orange-500 mb-4"></i>
+                    <h2 class="font-semibold text-lg mb-2">See the Full Picture, Instantly</h2>
+                    <p class="text-sm text-gray-700">
+                        No more hunting for critical details. Get a timeline-based view of patient history, lab trends,
+                        medications, and specialist notes—all in one place.
+                    </p>
+                </div>
+                <div class="feature-card p-6 rounded-lg hover:bg-white/50">
+                    <i class="fas fa-brain text-3xl text-orange-500 mb-4"></i>
+                    <h2 class="font-semibold text-lg mb-2">AI That Works for You</h2>
+                    <p class="text-sm text-gray-700">
+                        Predict risks before complications arise. Jeevnik highlights glucose trends, adherence issues,
+                        and early signs of neuropathy, helping you make proactive decisions.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <img alt="Doctor using medical software"
+                    class="rounded-lg shadow-xl max-h-64 w-full object-contain mb-8 hover:shadow-2xl transition-shadow duration-300"
+                    src="images/page12.png" />
+                <div class="feature-card p-6 rounded-lg hover:bg-white/50 text-center">
+                    <i class="fas fa-heartbeat text-3xl text-orange-500 mb-4"></i>
+                    <h2 class="font-semibold text-lg text-center mb-2">Move Beyond Medications</h2>
+                    <p class="text-sm text-gray-700">
+                        Auto-generated lifestyle interventions, including personalized diet plans, exercise recommendations,
+                        and psychological support, help patients stay on track - improving adherence and long-term outcomes.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-start space-y-8">
+                <div class="feature-card p-6 rounded-lg hover:bg-white/50 text-right">
+                    <i class="fas fa-bell text-3xl text-orange-500 mb-4"></i>
+                    <h2 class="font-semibold text-lg mb-2">Smarter Follow-Ups, Better Patient Engagement</h2>
+                    <p class="text-sm text-gray-700">
+                        Automated reminders for tests and appointments reduce no-shows and keep patients actively
+                        engaged in their care.
+                    </p>
+                </div>
+                <div class="feature-card p-6 rounded-lg hover:bg-white/50 text-right">
+                    <i class="fas fa-users text-3xl text-orange-500 mb-4"></i>
+                    <h2 class="font-semibold text-lg mb-2">Seamless Multi-Specialty Collaboration</h2>
+                    <p class="text-sm text-gray-700">
+                        Easily access notes from endocrinologists, cardiologists, nephrologists, and ophthalmologists.
+                        One-click referrals ensure smooth coordination without delays.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
